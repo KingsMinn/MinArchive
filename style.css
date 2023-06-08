@@ -1,0 +1,125 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+@font-face {
+    font-family: 'Pretendard';
+    font-style: normal;
+    font-weight: 700;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pretendard';
+}
+
+nav{
+    font-weight: 600;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(33, 33, 33, 0.813);
+    z-index: 100;
+    backdrop-filter: blur(50px);
+}
+
+nav name a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    
+}
+
+nav name{
+    transition: transform 0.2s ease;
+}
+
+nav name:hover{
+    transform: scale(1.05);
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+    transition: transform 0.2s ease;
+    
+}
+
+nav ul li a{
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(200, 200, 200);
+    font-size: 12px;
+    transition: transform 0.2s ease;
+}
+
+nav ul li:hover{
+    transform: scale(1.05);
+}
+
+nav ul li:hover a{
+    color: white;
+}
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 11, 61, 0.653);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.content div{
+    font-weight: 700;
+    font-size: 60px;
+    color: white;
+    line-height: 130%;
+}
+
+.content a{
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0.718);
+    padding: 15px 30px;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: transform 0.2s ease;
+    transition: 0.2s ease;
+    backdrop-filter: blur(5px);
+}
+
+.content a:hover{
+    color: rgb(0, 0, 0);
+    background-color: black;
+    transform: scale(1.05);
+    background-color: rgb(255, 255, 255);
+}
+
+.back-video{
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+    transform: scale(1.2);
+    filter: blur(3px);
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        justify-content: center;
+        width: 150%;
+        height: 150%;
+    }
+}
