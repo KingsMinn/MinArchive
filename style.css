@@ -113,13 +113,13 @@ nav ul li:hover a{
     justify-content: center;
     z-index: -1;
     transform: scale(1.2);
-    filter: blur(3px);
+    filter: blur(5px);
 }
 
 @media (min-aspect-ratio: 16/9){
     .back-video{
         justify-content: center;
-        width: 150%;
-        height: 150%;
+        width: 250%;
+        height: 250%;
     }
 }
